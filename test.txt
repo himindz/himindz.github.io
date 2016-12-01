@@ -1,0 +1,40 @@
+ChatOps in a DevOps strategy
+Collaboration and communications is at the heart of a successful DevOps strategy. The DevOps culture evolves not only because of the open communication amongst the human stakeholders but also because of the communication and collaboration among the tools in toolchain used in the automation.
+In a succussful automation helping achieve the DevOps model, the tools/processes/technolgies like Jenkins, Jira, Git, Chef, µServices, API GWs, ChatBots and you name it, interact with human via common communication channels like any other human stakeholder. 
+ChapOps 
+The modern Chat Systems including Slack, Mattermost, HipChat provide the necessary integration points and ChatBots to implement a truly amazing communication model that serves as the pivot for the whole team including the tools and processes. 
+I will be discussing the implementation of a ChatOps model using MatterMost and Slack in the following chapter. But let us first discuss the key characterstics of the Chat model.
+
+
+1. No Spam
+The key feature of a useful ChapOps system is the No Spam filter. Spam in the context means that the information goes to only relevant stake holders. This is controlled via relevant Channels in slack/mattermost and AI based bots which can route and filter the messages according to their relevance and importance.
+You will find the examples of the ChatBots code written in ruby for the Slack/Mattermost helping filtering out spam from the channels. 
+
+2. Self Organizing Chat
+Like Spam, the disorganized, all over the place messages instead of contributing to better communication become hinderance. This becomes more evident when there are so many information feeders to the communication channels in the shape of tools integration. Just imagine if there are 100's of jenkins jobs feeding into the Chat system about the health and status of CICD pipeline.
+Or Git feeding the information about dozens of Pull Requests being create every now and then. For a successul ChatOps system the structure of the channels in critical in making the information useful for the stake holders.
+The automation for creation and cleanup of the channels in slack/mattermost and the structure of information in those channels will be our main goal in this chapter.
+
+3. Search, Search, Search
+One of the key success factor in Google's success was the demonstration of how search can turn the pile of apparently useless data into useful information. The twitter made is possible to tag the information such that you can retrieve without searching.
+The utility of a ChatOps systems can be measured by observing how the developers, engineers and the business analyst can find the useful information by searching the history. Indeed Slack/Mattermost have made the Confluence/Wiki somewhat irrelevant for getting the most update information about the project.
+I will be discussing the tagging and searching strategy for Slack/Mattermost across different channels, we also implement a search bot that collects the information not only from within the slack but also correlate it will google and other resources.
+
+
+4. Let's make it fun
+Communication must be fun, else it becomes the biggest factor in the failure of DevOps Culture evolution. Modern chat systems make it really easy to have a fun chat even in depressing circumstances. They say a picture is worth thousand words, an animated gif is worth hundred thousand words.
+I have seen how /giphy can take the team communiation to the next level. A jenkins job message that the CI is broken can be depressing but not when it shows this
+https://media.giphy.com/media/3o6ZsXAElDtzalJcZy/giphy.gif
+Use of giphy, motivating messages and right
+
+
+5. ChatBots
+ChatBots play the key role in ChatOps implementation. Search is useful but asking is even better. Back in the old days, one used to create long wiki pages for the developer to start in a team. From how to setup the laptop with essential tools to the information about the architecture and the dependencies everything is buried in those long wiki pages.
+But any new developer instead of reading those wiki pages will come to you and ask "How do you get vagrant intall on my windows?", "Do I need homebrew on my mac?".
+We implement a #newstarterbot at the end of this chapter.
+
+
+
+
+
+
